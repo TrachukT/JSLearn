@@ -21,12 +21,14 @@ const personalMovieDB ={
 
 function rememberMyFilms(){
 for(let i =0;i<2;i++){
-    const film = prompt("Last film","rkr"),
+    const film = prompt("Last film","rkr").trim(),
         rate = prompt("Your rate for it", "10");
     if(film.length<50 && film != null && rate != null && rate != '' && film != ''){
         personalMovieDB.movies[film] = rate;
+        console.log("done");
     }else{
         i--;
+        console.log("wrong meaning");
     }
 }
 }
