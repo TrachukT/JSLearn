@@ -17,7 +17,7 @@ const personalMovieDB ={
     "actors": {},
     "genres": [],
     "privat": false
-};
+}; 
 
 function rememberMyFilms(){
 for(let i =0;i<2;i++){
